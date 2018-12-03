@@ -1,0 +1,630 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "308fb22a-739b-314f-ac0e-5610c71a3656",
+        "id" : "bb45ab1f-697c-33f0-9a29-8e216049922f",
+        "name" : "testport",
+        "type" : "REMOTE_INPUT_PORT"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "df589122-e86f-3015-9d07-57c301a0c4f9",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "58e25ff6-d007-3c1c-bfbe-358182fb292d",
+        "name" : "GetMongo",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "aea0bebb-b630-375d-ace1-3e0c573d8b17",
+        "name" : "PutEmail",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "1adf4ab6-ac43-34b4-870d-043ded5705e0",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "failure", "retry" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
+        "name" : "PutSQL-FOCI",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
+        "name" : "PutSQL-FOCI",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "360adb55-7f7f-3541-b701-a61f9e4e1aa2",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "bfff9510-2873-343a-af84-b35512984af6",
+        "name" : "ExecuteScript",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "4eb7be95-7f15-3f44-b074-2a8be82ea580",
+        "name" : "UpdateAttribute",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "8bd37d6b-ce1b-3f5e-a131-a97f6c9546ce",
+      "labelIndex" : 1,
+      "name" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "success" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "id" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
+        "name" : "PutSQL-FOCI",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    } ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "name" : "nififlow",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 1163.9564640395015,
+      "y" : 370.6161524583614
+    },
+    "processGroups" : [ ],
+    "processors" : [ {
+      "autoTerminatedRelationships" : [ "success" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-update-attribute-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "4eb7be95-7f15-3f44-b074-2a8be82ea580",
+      "name" : "UpdateAttribute",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1372.8088405681315,
+        "y" : 797.5366922542626
+      },
+      "properties" : {
+        "Store State" : "Do not store state"
+      },
+      "propertyDescriptors" : {
+        "Delete Attributes Expression" : {
+          "displayName" : "Delete Attributes Expression",
+          "identifiesControllerService" : false,
+          "name" : "Delete Attributes Expression",
+          "sensitive" : false
+        },
+        "Store State" : {
+          "displayName" : "Store State",
+          "identifiesControllerService" : false,
+          "name" : "Store State",
+          "sensitive" : false
+        },
+        "Stateful Variables Initial Value" : {
+          "displayName" : "Stateful Variables Initial Value",
+          "identifiesControllerService" : false,
+          "name" : "Stateful Variables Initial Value",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.attributes.UpdateAttribute",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "original", "failure" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-mongodb-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "PRIMARY",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "58e25ff6-d007-3c1c-bfbe-358182fb292d",
+      "name" : "GetMongo",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 340.1685372455181,
+        "y" : 174.83019494968357
+      },
+      "properties" : {
+        "mongo-charset" : "UTF-8",
+        "ssl-client-auth" : "REQUIRED",
+        "json-type" : "Extended",
+        "Mongo Database Name" : "fms",
+        "results-per-flowfile" : "100",
+        "Mongo URI" : "mongodb://admin:admin@10.118.11.3:27017",
+        "Mongo Collection Name" : "audit_history",
+        "use-pretty-printing" : "true",
+        "Limit" : "300"
+      },
+      "propertyDescriptors" : {
+        "mongo-charset" : {
+          "displayName" : "Character Set",
+          "identifiesControllerService" : false,
+          "name" : "mongo-charset",
+          "sensitive" : false
+        },
+        "ssl-context-service" : {
+          "displayName" : "SSL Context Service",
+          "identifiesControllerService" : true,
+          "name" : "ssl-context-service",
+          "sensitive" : false
+        },
+        "Query" : {
+          "displayName" : "Query",
+          "identifiesControllerService" : false,
+          "name" : "Query",
+          "sensitive" : false
+        },
+        "ssl-client-auth" : {
+          "displayName" : "Client Auth",
+          "identifiesControllerService" : false,
+          "name" : "ssl-client-auth",
+          "sensitive" : false
+        },
+        "json-type" : {
+          "displayName" : "JSON Type",
+          "identifiesControllerService" : false,
+          "name" : "json-type",
+          "sensitive" : false
+        },
+        "Projection" : {
+          "displayName" : "Projection",
+          "identifiesControllerService" : false,
+          "name" : "Projection",
+          "sensitive" : false
+        },
+        "Mongo Database Name" : {
+          "displayName" : "Mongo Database Name",
+          "identifiesControllerService" : false,
+          "name" : "Mongo Database Name",
+          "sensitive" : false
+        },
+        "mongo-query-attribute" : {
+          "displayName" : "Query Output Attribute",
+          "identifiesControllerService" : false,
+          "name" : "mongo-query-attribute",
+          "sensitive" : false
+        },
+        "results-per-flowfile" : {
+          "displayName" : "Results Per FlowFile",
+          "identifiesControllerService" : false,
+          "name" : "results-per-flowfile",
+          "sensitive" : false
+        },
+        "Mongo URI" : {
+          "displayName" : "Mongo URI",
+          "identifiesControllerService" : false,
+          "name" : "Mongo URI",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Mongo Collection Name" : {
+          "displayName" : "Mongo Collection Name",
+          "identifiesControllerService" : false,
+          "name" : "Mongo Collection Name",
+          "sensitive" : false
+        },
+        "Sort" : {
+          "displayName" : "Sort",
+          "identifiesControllerService" : false,
+          "name" : "Sort",
+          "sensitive" : false
+        },
+        "use-pretty-printing" : {
+          "displayName" : "Pretty Print Results JSON",
+          "identifiesControllerService" : false,
+          "name" : "use-pretty-printing",
+          "sensitive" : false
+        },
+        "Limit" : {
+          "displayName" : "Limit",
+          "identifiesControllerService" : false,
+          "name" : "Limit",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "300 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.mongodb.GetMongo",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "failure" ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-scripting-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "bfff9510-2873-343a-af84-b35512984af6",
+      "name" : "ExecuteScript",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 483.9937744140625,
+        "y" : 613.8461617082027
+      },
+      "properties" : {
+        "Script Engine" : "ECMAScript",
+        "Script Body" : "var StreamCallback = Java.type(\"org.apache.nifi.processor.io.StreamCallback\");\n var IOUtils = Java.type(\"org.apache.commons.io.IOUtils\");\n var StandardCharsets = Java.type(\"java.nio.charset.StandardCharsets\");\n  \n var flowFile = session.get();\n var text='No Payload';\n\t if(flowFile != null) {\n \t// Create a new StreamCallback, passing in a function to define the interface method\n\t flowFile = session.write(flowFile,\n\t new StreamCallback(function(inputStream, outputStream) {\n\t text = IOUtils.toString(inputStream, StandardCharsets.UTF_8)\n\t\n        }));\n      }\nflowFile = session.putAttribute(flowFile, \"PAYLOAD\", text)\nsession.transfer(flowFile, REL_SUCCESS)"
+      },
+      "propertyDescriptors" : {
+        "Script File" : {
+          "displayName" : "Script File",
+          "identifiesControllerService" : false,
+          "name" : "Script File",
+          "sensitive" : false
+        },
+        "Script Engine" : {
+          "displayName" : "Script Engine",
+          "identifiesControllerService" : false,
+          "name" : "Script Engine",
+          "sensitive" : false
+        },
+        "Script Body" : {
+          "displayName" : "Script Body",
+          "identifiesControllerService" : false,
+          "name" : "Script Body",
+          "sensitive" : false
+        },
+        "Module Directory" : {
+          "displayName" : "Module Directory",
+          "identifiesControllerService" : false,
+          "name" : "Module Directory",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.script.ExecuteScript",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
+      "name" : "PutSQL-FOCI",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 1092.0176209697333,
+        "y" : 534.923148122273
+      },
+      "properties" : {
+        "Support Fragmented Transactions" : "true",
+        "putsql-sql-statement" : "insert into test(name) values('${PAYLOAD}')",
+        "Batch Size" : "100",
+        "Obtain Generated Keys" : "false",
+        "JDBC Connection Pool" : "5a869156-e339-3198-878f-f1d16e659d96",
+        "rollback-on-failure" : "true"
+      },
+      "propertyDescriptors" : {
+        "Support Fragmented Transactions" : {
+          "displayName" : "Support Fragmented Transactions",
+          "identifiesControllerService" : false,
+          "name" : "Support Fragmented Transactions",
+          "sensitive" : false
+        },
+        "putsql-sql-statement" : {
+          "displayName" : "SQL Statement",
+          "identifiesControllerService" : false,
+          "name" : "putsql-sql-statement",
+          "sensitive" : false
+        },
+        "Transaction Timeout" : {
+          "displayName" : "Transaction Timeout",
+          "identifiesControllerService" : false,
+          "name" : "Transaction Timeout",
+          "sensitive" : false
+        },
+        "Batch Size" : {
+          "displayName" : "Batch Size",
+          "identifiesControllerService" : false,
+          "name" : "Batch Size",
+          "sensitive" : false
+        },
+        "Obtain Generated Keys" : {
+          "displayName" : "Obtain Generated Keys",
+          "identifiesControllerService" : false,
+          "name" : "Obtain Generated Keys",
+          "sensitive" : false
+        },
+        "JDBC Connection Pool" : {
+          "displayName" : "JDBC Connection Pool",
+          "identifiesControllerService" : true,
+          "name" : "JDBC Connection Pool",
+          "sensitive" : false
+        },
+        "rollback-on-failure" : {
+          "displayName" : "Rollback On Failure",
+          "identifiesControllerService" : false,
+          "name" : "rollback-on-failure",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "1sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutSQL",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ ],
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "1.7.1"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "aea0bebb-b630-375d-ace1-3e0c573d8b17",
+      "name" : "PutEmail",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : 915.7325631244244,
+        "y" : 823.1596627231211
+      },
+      "properties" : {
+        "SMTP Socket Factory" : "javax.net.ssl.SSLSocketFactory",
+        "Message" : "",
+        "Attach File" : "false",
+        "SMTP Port" : "25",
+        "SMTP Auth" : "true",
+        "Include All Attributes In Message" : "false",
+        "Subject" : "Message from NiFi",
+        "SMTP X-Mailer Header" : "NiFi",
+        "Content Type" : "text/plain",
+        "email-ff-content-as-message" : "false",
+        "SMTP TLS" : "false"
+      },
+      "propertyDescriptors" : {
+        "CC" : {
+          "displayName" : "CC",
+          "identifiesControllerService" : false,
+          "name" : "CC",
+          "sensitive" : false
+        },
+        "SMTP Socket Factory" : {
+          "displayName" : "SMTP Socket Factory",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Socket Factory",
+          "sensitive" : false
+        },
+        "BCC" : {
+          "displayName" : "BCC",
+          "identifiesControllerService" : false,
+          "name" : "BCC",
+          "sensitive" : false
+        },
+        "Message" : {
+          "displayName" : "Message",
+          "identifiesControllerService" : false,
+          "name" : "Message",
+          "sensitive" : false
+        },
+        "Attach File" : {
+          "displayName" : "Attach File",
+          "identifiesControllerService" : false,
+          "name" : "Attach File",
+          "sensitive" : false
+        },
+        "attribute-name-regex" : {
+          "displayName" : "Attributes to Send as Headers (Regex)",
+          "identifiesControllerService" : false,
+          "name" : "attribute-name-regex",
+          "sensitive" : false
+        },
+        "SMTP Port" : {
+          "displayName" : "SMTP Port",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Port",
+          "sensitive" : false
+        },
+        "SMTP Auth" : {
+          "displayName" : "SMTP Auth",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Auth",
+          "sensitive" : false
+        },
+        "From" : {
+          "displayName" : "From",
+          "identifiesControllerService" : false,
+          "name" : "From",
+          "sensitive" : false
+        },
+        "Include All Attributes In Message" : {
+          "displayName" : "Include All Attributes In Message",
+          "identifiesControllerService" : false,
+          "name" : "Include All Attributes In Message",
+          "sensitive" : false
+        },
+        "SMTP Hostname" : {
+          "displayName" : "SMTP Hostname",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Hostname",
+          "sensitive" : false
+        },
+        "Subject" : {
+          "displayName" : "Subject",
+          "identifiesControllerService" : false,
+          "name" : "Subject",
+          "sensitive" : false
+        },
+        "SMTP X-Mailer Header" : {
+          "displayName" : "SMTP X-Mailer Header",
+          "identifiesControllerService" : false,
+          "name" : "SMTP X-Mailer Header",
+          "sensitive" : false
+        },
+        "Content Type" : {
+          "displayName" : "Content Type",
+          "identifiesControllerService" : false,
+          "name" : "Content Type",
+          "sensitive" : false
+        },
+        "SMTP Username" : {
+          "displayName" : "SMTP Username",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Username",
+          "sensitive" : false
+        },
+        "To" : {
+          "displayName" : "To",
+          "identifiesControllerService" : false,
+          "name" : "To",
+          "sensitive" : false
+        },
+        "SMTP Password" : {
+          "displayName" : "SMTP Password",
+          "identifiesControllerService" : false,
+          "name" : "SMTP Password",
+          "sensitive" : false
+        },
+        "email-ff-content-as-message" : {
+          "displayName" : "Flow file content as message",
+          "identifiesControllerService" : false,
+          "name" : "email-ff-content-as-message",
+          "sensitive" : false
+        },
+        "SMTP TLS" : {
+          "displayName" : "SMTP TLS",
+          "identifiesControllerService" : false,
+          "name" : "SMTP TLS",
+          "sensitive" : false
+        }
+      },
+      "runDurationMillis" : 0,
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "org.apache.nifi.processors.standard.PutEmail",
+      "yieldDuration" : "1 sec"
+    } ],
+    "remoteProcessGroups" : [ {
+      "comments" : "",
+      "communicationsTimeout" : "30 sec",
+      "componentType" : "REMOTE_PROCESS_GROUP",
+      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "identifier" : "308fb22a-739b-314f-ac0e-5610c71a3656",
+      "inputPorts" : [ {
+        "batchSize" : { },
+        "comments" : "",
+        "componentType" : "REMOTE_INPUT_PORT",
+        "concurrentlySchedulableTaskCount" : 1,
+        "groupIdentifier" : "308fb22a-739b-314f-ac0e-5610c71a3656",
+        "identifier" : "bb45ab1f-697c-33f0-9a29-8e216049922f",
+        "name" : "testport",
+        "remoteGroupId" : "308fb22a-739b-314f-ac0e-5610c71a3656",
+        "targetId" : "b3564357-af9e-3edf-6a07-d0999f656da7",
+        "useCompression" : false
+      } ],
+      "name" : "NiFi Flow",
+      "outputPorts" : [ ],
+      "position" : {
+        "x" : 44.999988661533735,
+        "y" : 585.9999947543711
+      },
+      "proxyHost" : "",
+      "proxyUser" : "",
+      "targetUri" : "http://10.39.202.76:8081/nifi",
+      "targetUris" : "http://10.39.202.76:8081/nifi",
+      "transportProtocol" : "RAW",
+      "yieldDuration" : "10 sec"
+    } ],
+    "variables" : { }
+  }
+}
