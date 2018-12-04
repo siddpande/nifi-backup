@@ -294,8 +294,8 @@
       "name" : "ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 633.8361206054688,
-        "y" : 312.9230965226558
+        "x" : 807.2073974609375,
+        "y" : 238.62109456953078
       },
       "properties" : {
         "Script Engine" : "ECMAScript",
