@@ -116,8 +116,8 @@
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1372.8088405681315,
-        "y" : 797.5366922542626
+        "x" : 739.0658596111002,
+        "y" : 834.4414163753563
       },
       "properties" : {
         "Store State" : "Do not store state"
@@ -350,8 +350,8 @@
       "name" : "PutSQL-FOCI",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 1092.0176209697333,
-        "y" : 534.923148122273
+        "x" : 831.1394471416083,
+        "y" : 582.0084752707105
       },
       "properties" : {
         "Support Fragmented Transactions" : "true",
