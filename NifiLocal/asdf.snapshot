@@ -1,0 +1,25 @@
+{
+  "header" : {
+    "dataModelVersion" : "2"
+  },
+  "content" : {
+    "comments" : "",
+    "componentType" : "PROCESS_GROUP",
+    "connections" : [ ],
+    "controllerServices" : [ ],
+    "funnels" : [ ],
+    "identifier" : "7dac561d-867c-3b0c-a0a4-a1431bd0edca",
+    "inputPorts" : [ ],
+    "labels" : [ ],
+    "name" : "testdelete",
+    "outputPorts" : [ ],
+    "position" : {
+      "x" : 8.06131218592975,
+      "y" : 468.00868740137435
+    },
+    "processGroups" : [ ],
+    "processors" : [ ],
+    "remoteProcessGroups" : [ ],
+    "variables" : { }
+  }
+}
