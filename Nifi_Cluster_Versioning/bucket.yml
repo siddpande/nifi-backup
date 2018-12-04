@@ -1,4 +1,4 @@
 flows:
-  caeda44f-d325-4b01-99fb-d966113a6962: {ver: 1, file: Nifi_Custer_Flow.snapshot}
+  caeda44f-d325-4b01-99fb-d966113a6962: {ver: 2, file: Nifi_Custer_Flow.snapshot}
 layoutVer: 1
 bucketId: 9bc3aadc-a3cd-4d2c-8ea2-a554a709c106
