@@ -18,7 +18,7 @@
         "type" : "REMOTE_INPUT_PORT"
       },
       "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "df589122-e86f-3015-9d07-57c301a0c4f9",
       "labelIndex" : 1,
       "name" : "",
@@ -26,7 +26,7 @@
       "selectedRelationships" : [ "success" ],
       "source" : {
         "comments" : "",
-        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "groupId" : "732bc989-0167-1000-f7e3-85d53001bb71",
         "id" : "58e25ff6-d007-3c1c-bfbe-358182fb292d",
         "name" : "GetMongo",
         "type" : "PROCESSOR"
@@ -39,13 +39,13 @@
       "componentType" : "CONNECTION",
       "destination" : {
         "comments" : "",
-        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "groupId" : "732bc989-0167-1000-f7e3-85d53001bb71",
         "id" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
         "name" : "PutSQL-FOCI",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "360adb55-7f7f-3541-b701-a61f9e4e1aa2",
       "labelIndex" : 1,
       "name" : "",
@@ -53,7 +53,7 @@
       "selectedRelationships" : [ "success" ],
       "source" : {
         "comments" : "",
-        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "groupId" : "732bc989-0167-1000-f7e3-85d53001bb71",
         "id" : "bfff9510-2873-343a-af84-b35512984af6",
         "name" : "ExecuteScript",
         "type" : "PROCESSOR"
@@ -66,13 +66,13 @@
       "componentType" : "CONNECTION",
       "destination" : {
         "comments" : "",
-        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "groupId" : "732bc989-0167-1000-f7e3-85d53001bb71",
         "id" : "4eb7be95-7f15-3f44-b074-2a8be82ea580",
         "name" : "UpdateAttribute",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "8bd37d6b-ce1b-3f5e-a131-a97f6c9546ce",
       "labelIndex" : 1,
       "name" : "",
@@ -80,7 +80,7 @@
       "selectedRelationships" : [ "success" ],
       "source" : {
         "comments" : "",
-        "groupId" : "24b73726-3013-3676-3e20-b225234ec9cd",
+        "groupId" : "732bc989-0167-1000-f7e3-85d53001bb71",
         "id" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
         "name" : "PutSQL-FOCI",
         "type" : "PROCESSOR"
@@ -89,14 +89,14 @@
     } ],
     "controllerServices" : [ ],
     "funnels" : [ ],
-    "identifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+    "identifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
     "inputPorts" : [ ],
     "labels" : [ ],
     "name" : "nififlow",
     "outputPorts" : [ ],
     "position" : {
-      "x" : 1163.9564640395015,
-      "y" : 370.6161524583614
+      "x" : 495.36965027368547,
+      "y" : 450.08470255216946
     },
     "processGroups" : [ ],
     "processors" : [ {
@@ -111,7 +111,7 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "4eb7be95-7f15-3f44-b074-2a8be82ea580",
       "name" : "UpdateAttribute",
       "penaltyDuration" : "30 sec",
@@ -160,7 +160,7 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "PRIMARY",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "58e25ff6-d007-3c1c-bfbe-358182fb292d",
       "name" : "GetMongo",
       "penaltyDuration" : "30 sec",
@@ -289,13 +289,13 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "bfff9510-2873-343a-af84-b35512984af6",
       "name" : "ExecuteScript",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 483.9937744140625,
-        "y" : 613.8461617082027
+        "x" : 633.8361206054688,
+        "y" : 312.9230965226558
       },
       "properties" : {
         "Script Engine" : "ECMAScript",
@@ -345,7 +345,7 @@
       "componentType" : "PROCESSOR",
       "concurrentlySchedulableTaskCount" : 1,
       "executionNode" : "ALL",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "fc5a1b88-37b1-3ca6-b6df-6c353a7b7377",
       "name" : "PutSQL-FOCI",
       "penaltyDuration" : "30 sec",
@@ -416,7 +416,7 @@
       "comments" : "",
       "communicationsTimeout" : "30 sec",
       "componentType" : "REMOTE_PROCESS_GROUP",
-      "groupIdentifier" : "3bcc1572-6a57-38b3-a4f4-f6f1618fc0f6",
+      "groupIdentifier" : "3f0f42fb-68e6-3c12-8c0e-097d37181b9b",
       "identifier" : "308fb22a-739b-314f-ac0e-5610c71a3656",
       "inputPorts" : [ {
         "batchSize" : { },
